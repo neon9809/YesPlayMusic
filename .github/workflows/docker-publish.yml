@@ -1,12 +1,13 @@
 name: Build and Publish Docker Image
 
-# 触发条件：当代码推送到 main 分支时
+
 on:
   push:
     branches:
       - main
-  # 也可以手动触发
-  workflow_dispatch:
+  workflow_dispatch:  # 添加这一行，支持手动触发
+# 触发条件：当代码推送到 main 分支时
+
 
 jobs:
   build:
